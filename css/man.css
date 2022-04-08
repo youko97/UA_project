@@ -1,0 +1,220 @@
+bady>section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-banner {
+    position: absolute;
+    bottom: 56px;
+    left: 5%;
+}
+
+.btn-banner a {
+    width: 232px;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 43px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #1d1d1d;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+}
+
+.btn-banner a span {
+    position: relative;
+    transition: 0.2s;
+}
+
+.btn-banner a span::before {
+    position: absolute;
+    content: attr(data-text);
+    transform: translateY(75%);
+}
+
+.btn-banner a:hover span {
+    transform: translateY(-75%);
+}
+
+
+/* 大海报模块 */
+
+.banner-box {
+    width: 100%;
+}
+
+
+/* 大海报模块一 */
+
+.banner-box1 {
+    width: 100%;
+    height: 925px;
+}
+
+
+/* right */
+
+.banner-box1 .right {
+    width: 38.89%;
+    height: 88.57%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: left;
+    background: #1d1d1d;
+    padding-left: 8.88%;
+}
+
+.right-cont {
+    width: 256px;
+    height: 245px;
+    position: absolute;
+    top: 35%;
+}
+
+.right-cont h3 {
+    font-size: 64px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 64px;
+    margin-bottom: 41px;
+}
+
+.right-cont ul li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.right-cont ul li a {
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+/* left */
+
+.banner-box1 .left {
+    width: 1163px;
+    height: 100%;
+    position: relative;
+}
+
+.banner-box1 .left img {
+    width: 100%;
+}
+
+
+/* 大海报2 */
+
+.banner-box2 {
+    width: 100%;
+    position: relative;
+    padding: 40px 4%!important;
+    margin-bottom: 30px;
+}
+
+.banner-box2 img {
+    width: 1750px;
+    height: 729px;
+}
+
+.banner-box2 .banner-box2-buy {
+    width: 600px;
+    height: 203px;
+    max-width: 100%;
+    min-height: 260px;
+    position: absolute;
+    bottom: 44px;
+    right: 77px;
+    background-color: #fff;
+    padding: 3.89% 2% 3.89% 4%;
+}
+
+.banner-box2-buy #banner-btn {
+    width: 208px;
+    padding-left: 27px;
+    position: absolute;
+    left: -87px;
+    bottom: -82px;
+}
+
+.banner-box2-buy p {
+    font-size: 14px;
+    font-family: 'armour_w_rg', "PingFangSC-Regular", "微软雅黑", "Microsoft YaHei", sans-serif, "armour_w_rg";
+    font-weight: 400;
+    color: #1d1d1d;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+.banner-box2-buy h3 {
+    font-size: 24px;
+    font-family: "armour_w_bd", "PingFangSC-Regular", "微软雅黑", "Microsoft YaHei", sans-serif, "armour_w_rg";
+    font-weight: 700;
+    color: #1d1d1d;
+    line-height: 32px;
+    margin-bottom: 9px;
+}
+
+
+/* 商品轮播图 */
+
+#man-tops,
+#man-bottoms,
+#man-shoes,
+#man-access,
+#man-sports,
+#man-more {
+    height: 900px;
+    margin-bottom: 30px;
+}
+
+#man-more {
+    margin-bottom: -145px;
+}
+
+#man-sports {
+    width: 100%;
+    background-color: #000;
+    padding-top: 30px;
+}
+
+#man-sports h3,
+#man-sports-title a {
+    color: #fff;
+}
+
+#man-sports h3 {
+    margin-left: 103px;
+}
+
+.picture-background {
+    background-color: #f1f1f1;
+}
+
+#man-sports-modle {
+    margin-right: 16px;
+}
+
+#man-more-picture {
+    height: 526px;
+}
+
+#man-more-picture img {
+    height: 100%;
+}
+
+#man-tops-btn {
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+}
+
+#man-tops-label {
+    border: 1px solid #000;
+    padding-left: 72px;
+}

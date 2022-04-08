@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico">
+    <title>Under Armour|安德玛中国官网 - UA运动品牌专卖，美国高端运动科技品牌</title>
+    <link href="css/loginRegister.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/font_search/iconfont.css">
+    <link rel="stylesheet" href="css/font_heart/iconfont.css">
+    <link rel="stylesheet" href="css/font_shop/iconfont.css">
+    <link rel="stylesheet" href="css/font_close/iconfont.css">
+    <link rel="stylesheet" href="css/font_arrow/iconfont.css">
+    <script src="jquery-1.11.3/jquery.min.js "></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-box">
+            <!-- 顶部导航栏 -->
+            <div class="top-nav">
+                <div class="top-nav-left">
+                    <a href="">在线客服</a>
+                </div>
+                <!-- 登录 -->
+                <div class="top-nav-right">
+                    <span id="btn">欢迎&nbsp;登录/注册</span>
+                    <!-- 登录模块 -->
+                    <div class="yinyin">
+                        <div class="login_register" id="login_register">
+                            <!-- 注册 -->
+                            <div id="div1">
+                                <div id="div1_div1">
+                                    <!-- 点击x -->
+                                    <div id="xImg" class="div1_div11X"><img src="image/x.png" width="15"></div>
+                                    <script>
+                                        $(function() {
+                                            var xImg = document.getElementById("xImg");
+                                            var yinyin = document.querySelector(".yinyin");
+                                            xImg.onclick = function() {
+                                                yinyin.style.display = "none";
+                                            }
+                                        })
+                                    </script>
+                                    <h4>欢迎来到<strong>UA</strong>运动家俱乐部</h4>
+
+                                    <ul class="div1_div1ul dialog-title-box e-switch">
+                                        <li onclick="TurnToRegister()" class="div1_div1ulli1">
+                                            <a style="color: #000000;font-size: 14px;" class="aP1">手机号快捷登录/注册</a>
+                                            <span class="hx1"></span>
+                                        </li>
+                                        <li onclick="TurnToLogin()" class="div1_div1ulli2">
+                                            <a class="aP2" style="font-size: 14px;">账号密码登录</a>
+                                            <span class="hx2"></span>
+                                        </li>
+                                    </ul>
+                                    <!-- 注册登录跳转 -->
+                                    <script>
+                                        // 登录
+                                        var TurnToLogin = () => {
+                                                document.getElementById("div2").style.display = "block";
+                                                document.getElementById("div1").style.display = "none";
+                                            }
+                                            // 注册
+                                        var TurnToRegister = () => {
+                                            document.getElementById("div1").style.display = "block";
+                                            document.getElementById("div2").style.display = "none";
+                                        }
+                                    </script>
+                                    <!-- 表单 -->
+                                    <form id="myRegisterForm" method="post" action="man.html">
+                                        <div class="divform">
+                                            <div class="inputs">
+                                                <label class="inputs_label1">手机号码</label>
+                                                <input id="iptPhone" class="inputs_input" type="text" />
+                                                <p style="font-size: 13px;" id="pPhone"></p>
+                                            </div>
+                                            <br>
+                                            <div class="inputs divImgYz">
+                                                <label class="inputs_label1">图形验证码</label>
+                                                <input id="iptImg" class="inputs_input imgYz" type="text" maxlength="4" />
+                                                <!-- 图形验证 -->
+                                                <div id="result" onclick="getRanNum()" class="yzImg">
+                                                    <span class="spanAb">A,S,D,C</span>
+                                                    <!-- <img src="./image/securityImageLogin.jpg"/> -->
+                                                </div>
+                                                <p id="pImg" style="font-size: 13px;"></p>
+                                                <script>
+                                                    var result = [];
+
+                                                    function getRanNum() {
+                                                        result = [];
+                                                        for (var i = 0; i < 4; i++) {
+                                                            var ranNum = Math.ceil(Math.random() * 25); //生成一个0到25的数字
+                                                            //大写字母'A'的ASCII是65,A~Z的ASCII码就是65 + 0~25;然后调用String.fromCharCode()传入ASCII值返回相应的字符并push进数组里
+                                                            result.push(String.fromCharCode(65 + ranNum));
+                                                        }
+                                                        document.getElementById('result').innerText = result.toString();
+                                                        document.getElementById('result').style.fontSize = "24px";
+                                                        document.getElementById('result').style.fontFamily = "楷体";
+                                                        document.getElementById('result').style.opacity = "0.1";
+                                                        document.getElementById('result').style.lineHeight = "30px";
+                                                    }
+                                                </script>
+                                            </div>
+                                            <br>
+                                            <div class="inputs">
+                                                <label class="inputs_label1">短信验证</label>
+                                                <input id="iptDx" class="inputs_input" type="text" />
+                                                <!-- 短信验证 -->
+                                                <div class="yzDx">
+                                                    <a id="button">
+                                                        <!-- 获取验证码 -->
+                                                    </a>
+                                                </div>
+                                                <p id="pDX" style="font-size: 13px;">
+                                                    </span>
+                                            </div>
+                                            <script src="./js/daojishiYZM.js"></script>
+
+                                            <!-- 记住我 -->
+                                            <div class="jz">
+                                                <input class="jizhu" type="checkbox" /> 记住我
+                                            </div>
+                                            <div class="divBtns">
+                                                <button class="buttons">登录</button>
+                                            </div>
+                                            <br />
+                                            <p class="txt1">即刻加入UA运动家俱乐部，开启您的专享会员礼遇:</p>
+                                            <div class="divTxt">
+                                                <ul class="divTxtUl">
+                                                    <li>会员优享商品特权</li>
+                                                    <li>第一时间获得新品资讯</li>
+                                                    <li>积分礼遇，享消费购物积分</li>
+                                                    <li>品牌专属俱乐部体验与活动</li>
+                                                    <li>更全面的售后服务</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- 登录 -->
+                            <div id="div2">
+                                <div id="div2_div1">
+                                    <!-- 点击x -->
+                                    <div id="xImg2" class="div1_div11X"><img src="image/x.png" width="15"></div>
+                                    <script>
+                                        $(function() {
+                                            var xImg2 = document.getElementById("xImg2");
+                                            var yinyin = document.querySelector(".yinyin");
+                                            xImg2.onclick = function() {
+                                                yinyin.style.display = "none";
+                                            }
+                                        })
+                                    </script>
+                                    <h4>欢迎来到<strong>UA</strong>运动家俱乐部</h4>
+
+                                    <ul class="div2_div1ul dialog-title-box e-switch">
+                                        <li onclick="TurnToRegister()" class="div2_div1ulli1">
+                                            <a class="aP1" style="font-size: 14px;">手机号快捷登录/注册</a>
+                                            <span class="hx3"></span>
+                                        </li>
+                                        <li onclick="TurnToLogin()" class="div2_div1ulli2">
+                                            <a style="color: #000000;font-size: 14px;" class="aP2">账号密码登录</a>
+                                            <span class="hx4"></span>
+                                        </li>
+                                    </ul>
+                                    <!-- 登录表单 -->
+                                    <form id="myLoginForm" method="post" action="man.html">
+                                        <div class="divform">
+                                            <div class="inputs">
+                                                <label class="inputs_label1">手机号码/邮箱</label>
+                                                <input id="iptPhone2" class="inputs_input" type="text" />
+                                                <p style="font-size: 13px;" class="namess" id="PPhone2"></p>
+                                            </div>
+                                            <br />
+                                            <div class="inputs">
+                                                <label class="inputs_label1">密码</label>
+                                                <input id="pwd" class="inputs_input" type="password" />
+                                                <p id="Ppwd" style="font-size: 13px;"></p>
+                                            </div>
+                                            <!-- 记住我 -->
+                                            <div class="jz2">
+                                                <p>
+                                                    <span>
+                                                        <input class="jizhu" type="checkbox" /> 记住我
+                                                    </span>
+                                                    <span class="wjPwd"><a href="#">忘记密码?</a></span>
+                                                </p>
+                                            </div>
+                                            <div class="divBtns">
+                                                <button class="buttons">登录</button>
+                                            </div>
+                                            <br />
+                                            <p class="txt1">即刻加入UA运动家俱乐部，开启您的专享会员礼遇:</p>
+                                            <div class="divTxt">
+                                                <ul class="divTxtUl">
+                                                    <li>会员优享商品特权</li>
+                                                    <li>第一时间获得新品资讯</li>
+                                                    <li>积分礼遇，享消费购物积分</li>
+                                                    <li>品牌专属俱乐部体验与活动</li>
+                                                    <li>更全面的售后服务</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 模态框 -->
+                        <script>
+                            var btn = document.getElementById("btn");
+                            var yinyin = document.querySelector(".yinyin");
+                            btn.onclick = function() {
+                                yinyin.style.display = "block";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!-- 顶部菜单 -->
+            <div class="top-menu">
+                <!-- 左部logo -->
+                <div class="menu-left">
+                    <a href="home.html">
+                        <img src="img/header-logo.png" alt="" />
+                    </a>
+                </div>
+                <!-- 中部菜单栏 -->
+                <ul class="menu-tab">
+                    <li class="man">
+                        <ul class="menu-title">
+                            <li>
+                                <a href="man.html" class="lable1" data-text="男子">男子</a>
+                            </li>
+                            <li class="line"></li>
+                        </ul>
+                        <div class="sub-menu">
+                            <ul class="nav-box">
+                                <li>
+                                    <img src="img/CN-HP-NAV-PC-0419-1.jpg" alt="" />
+                                    <p>
+                                        <a href="">男子ISO-CHILL系列</a>
+                                    </p>
+                                    <p class="buy">
+                                        <a href="" class="line2">即刻选购</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">推荐系列</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">男子新品推荐</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">男子ISO-CHILL系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">CURRY品牌</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">男子VELOCITI FLOW系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">男子PROJECT ROCK系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">男子CHARGED跑鞋系列</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">服装</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">短袖/背心</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">POLO衫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">长袖</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">连帽上衣</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">外套</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">短裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">紧身裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">中裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">长裤</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">鞋类</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">跑鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">篮球鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">训练鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">运动休闲鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">拖鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">其他</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">配件</a>
+                                            </p>
+                                            <ul class="duan">
+                                                <li>
+                                                    <a href="" class="line2">运动耳机</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">包</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">帽</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">袜</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">手套</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">其他</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">运动</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">跑步</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">篮球</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">高尔夫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">户外</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">足球</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">运动休闲</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="women">
+                        <ul class="menu-title">
+                            <li>
+                                <a href="women.html" class="lable1">女子</a>
+                            </li>
+                            <li class="line"></li>
+                        </ul>
+                        <div class="sub-menu">
+                            <ul class="nav-box">
+                                <li>
+                                    <img src="img/CN-HP-NAV-PC-0419.jpg" alt="" />
+                                    <p>
+                                        <a href="">女子ISO-CHILL系列</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="line2">即刻选购</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">推荐系列</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="New Products yao/newProducts.html" class="line2">女子新品推荐</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">女子ISO-CHILL系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">CURRY品牌</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">女子VELOCITI FLOW系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">女子PROJECT ROCK系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">女子CHARGED跑鞋系列</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">服装</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">短袖/背心</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">POLO衫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">长袖</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">连帽上衣</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">外套</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">短裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">紧身裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">中裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">长裤</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">连衣裙/短裙</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">鞋类</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">跑鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">篮球鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">训练鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">运动休闲鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">拖鞋</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">其他</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">配件</a>
+                                            </p>
+                                            <ul class="duan">
+                                                <li>
+                                                    <a href="" class="line2">运动耳机</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">包</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">帽</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">袜</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">头带</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">手套</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">其他</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content duan">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">运动</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">健身/瑜伽</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">跑步</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">户外</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">高尔夫</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">运动休闲</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="children">
+                        <ul class="menu-title">
+                            <li>
+                                <a href="https://www.underarmour.cn/mens.htm#11" class="lable1">少年</a>
+                            </li>
+                            <li class="line"></li>
+                        </ul>
+                        <div class="sub-menu">
+                            <ul class="nav-box">
+                                <li>
+                                    <img src="img/CN-NAV1-PC-HP-20210618.jpg" alt="" />
+                                    <p>
+                                        <a href="">男童上装</a>
+                                    </p>
+                                    <p>
+                                        <a href="" class="line2">即刻选购</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">推荐系列</a>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    <a href="" class="line2">少年新品推荐</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">少年ROCK系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">少年HOVR系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">少年FLEECE抓绒系列</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">小童系列</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">男童装备</a>
+                                            </p>
+                                            <ul class="duan">
+                                                <li>
+                                                    <a href="" class="line2">上装</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">下装</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">鞋类</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">配件</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">女童装备</a>
+                                            </p>
+                                            <ul class="duan">
+                                                <li>
+                                                    <a href="" class="line2">上装</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">下装</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">鞋类</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">配件</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="nav-box-content">
+                                        <li>
+                                            <p class="line2">
+                                                <a href="">运动</a>
+                                            </p>
+                                            <ul class="duan">
+                                                <li>
+                                                    <a href="" class="line2">跑步</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">训练</a>
+                                                </li>
+                                                <li>
+                                                    <a href="" class="line2">篮球</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="story">
+                        <ul class="menu-title">
+                            <li>
+                                <a href="https://www.underarmour.cn/brandstory.htm#11" class="lable1">品牌故事</a>
+                            </li>
+                            <li class="line"></li>
+                        </ul>
+                        <ul class="sub-menu">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/brandstory-1.jpg" alt="" />
+                                    </a>
+                                    <p>
+                                        <a href="">关于品牌</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/brandstory-2.jpg" alt="" />
+                                    </a>
+                                    <p>
+                                        <a href="">运动明星</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/brandstory-3.jpg" alt="" />
+                                    </a>
+                                    <p>
+                                        <a href="">媒体中心</a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 右部搜索栏 -->
+                <div class="menu-right">
+                    <div class=search-box>
+                        <input type="search" maxlength="" placeholder="搜索" id="searchWordHeader" value="" autocomplete="off">
+                        <a href="">
+                            <span class="search-btn iconfont"></span>
+                        </a>
+                    </div>
+                    <!-- 愿望单 -->
+                    <div class="wish-box">
+                        <a href="">
+                            <span class="wish-btn iconfont"></span>
+                        </a>
+                    </div>
+                    <!-- 购物袋 -->
+                    <div class="shop-box">
+                        <!-- 遮罩层 -->
+                        <div class="shop-musk"></div>
+                        <!-- 购物内容模块 -->
+                        <div class="shop-cont">
+                            <div class="car-close iconfont"></div>
+                            <h4 class="car-title">购物袋 （0）</h4>
+                            <div class="shop-empty">
+                                您的购物袋为空
+                            </div>
+                        </div>
+                        <!-- 购物袋标志 -->
+                        <a href="">
+                            <span class="shop-btn iconfont"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <!-- 海报轮播 -->
+        <div class="banner-sf">
+            <div class="banner-father">
+                <div class="banner-box1 img">
+                    <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618">
+                        <img src="https://static.underarmour.cn/cn/prod/resources/images/20190808-REVISION/KV/1001/CN-HP-PRM-PC-KV-0618.jpg" alt="" />
+                    </a>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/p3024429-005.htm#21-1|NewLaunch|CURRY8|CURRY8FLOW|005|20210618" class="lable1">立即购买</a>
+                        </li>
+
+                    </ul>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618" class="lable1">了解更多</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-box2 img">
+                    <a href="https://www.underarmour.cn/p3024396-001.htm#21-2|NewLaunch|CURRY1|CURRY1|001|20210619">
+                        <img src="img/CN-HP-PRM-PC-KV-0702-1.jpg" alt="" />
+                    </a>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/p3024396-001.htm#21-2|NewLaunch|CURRY1|CURRY1|001|20210619" class="lable1">立即购买</a>
+                        </li>
+                    </ul>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/Activity/FLOW#21-3|NewLaunch|FLOW|VELOCITI|FLOW|20210303" class="lable1">了解更多</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-box3 img">
+                    <a href="https://www.underarmour.cn/Activity/SS21promotion#21-1|SS21promotion|SS21promotion|SS21promotion|20210629">
+                        <img src="img/CN-PC-KV-0629.jpg" alt="" />
+                    </a>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/list/s-Velociti#21-3|NewLaunch|FLOW|VELOCITI|FLOW|20210303" class="lable1">立即购买</a>
+                        </li>
+                    </ul>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/Activity/FLOW#21-3|NewLaunch|FLOW|VELOCITI|FLOW|20210303" class="lable1">了解更多</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner-box1 img">
+                    <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618">
+                        <img src="https://static.underarmour.cn/cn/prod/resources/images/20190808-REVISION/KV/1001/CN-HP-PRM-PC-KV-0618.jpg" alt="" />
+                    </a>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/p3024429-005.htm#21-1|NewLaunch|CURRY8|CURRY8FLOW|005|20210618" class="lable1">立即购买</a>
+                        </li>
+
+                    </ul>
+                    <ul class="banner-btn1 buy-btn">
+                        <li>
+                            <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618" class="lable1">了解更多</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="yuan">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+            <div class="dianji">
+                <span class="arrow_right"></span>
+            </div>
+        </div>
+        <!-- 新品推荐 -->
+        <div class="newProducts">
+            <h3>新品推荐</h3>
+            <!-- 新品模块1 -->
+            <ul class="new1">
+                <li>
+                    <div>
+                        <img src="img/CN-PRM-PC-HP-SECONDKV1-20210618.jpg" alt="" />
+                        <ul class="new-title">
+                            <li>
+                                <a href="" class="line2 white-line">男鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">女鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">UA FLOW跑鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">购买所有</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="" class="line2">选购鞋类</a>
+                    </p>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/CN-PRM-PC-HP-SECONDKV2-0616.jpg" alt="">
+                        <ul class="new-title">
+                            <li>
+                                <a href="" class="line2 white-line">男鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">女鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">UA FLOW跑鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">购买所有</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="" class="line2">选购男子装备</a>
+                    </p>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/CN-PRM-PC-HP-SECONDKV3-20210618.jpg" alt="">
+                        <ul class="new-title">
+                            <li>
+                                <a href="" class="line2 white-line">男鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">女鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">UA FLOW跑鞋</a>
+                            </li>
+                            <li>
+                                <a href="" class="line2 white-line">购买所有</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        <a href="" class="line2">选购女子装备</a>
+                    </p>
+                </li>
+            </ul>
+            <!-- 新品模块2 -->
+            <div class="new2">
+                <!-- 左部 -->
+                <div class="left-cont">
+                    <!-- 左顶部标题 -->
+                    <div class="top-box">
+                        <h3>樱·武·日·天</h3>
+                        <p>UA CURRY HOVR SPLASH篮球鞋</p>
+                        <div>
+                            <ul class="new-btn1 buy-btn">
+                                <li>
+                                    <a href="#" class="lable1">立即购买</a>
+                                </li>
+                            </ul>
+                            <ul class="new-btn1 buy-btn">
+                                <li>
+                                    <a href="#" class="lable1">了解更多</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 下部点击轮播 -->
+                    <div class="bottom-box">
+                        <div class="bottom-father">
+                            <div class="bottom-box1 imgs">
+                                <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618">
+                                    <img src="img/16221982119028147_DEFAULT.png" alt="" />
+                                </a>
+                                <div class="bottom-title">
+                                    <p>
+                                        <a href="">男女同款Curry HOVR Splash WH篮球鞋</a>
+                                    </p>
+                                    <p class="bottom-price">￥999</p>
+                                </div>
+                            </div>
+                            <div class="bottom-box2 imgs">
+                                <a href="https://www.underarmour.cn/p3024396-001.htm#21-2|NewLaunch|CURRY1|CURRY1|001|20210619">
+                                    <img src="img/1622197945338599_DEFAULT.png" alt="" />
+                                </a>
+                                <div class="bottom-title">
+                                    <p>
+                                        <a href="">男女同款Curry HOVR Splash SJ篮球鞋</a>
+                                    </p>
+                                    <p class="bottom-price">￥999</p>
+                                </div>
+                            </div>
+                            <div class="bottom-box3 imgs">
+                                <a href="https://www.underarmour.cn/Activity/SS21promotion#21-1|SS21promotion|SS21promotion|SS21promotion|20210629">
+                                    <img src="img/16221983141389962_F.png" alt="" />
+                                </a>
+                                <div class="bottom-title">
+                                    <p>
+                                        <a href="">男士UA库里Curry splash短袖T恤</a>
+                                    </p>
+                                    <p class="bottom-price">￥249</p>
+                                </div>
+                            </div>
+                            <div class="bottom-box1 imgs">
+                                <a href="https://www.underarmour.cn/Activity/CURRY8FLOW#21-1|NewLaunch|CURRY8|CURRY8FLOW|CURRY8FLOW|20210618">
+                                    <img src="img/16221982119028147_DEFAULT.png" alt="" />
+                                </a>
+                                <div class="bottom-title">
+                                    <p>
+                                        <a href="">男女同款Curry HOVR Splash WH篮球鞋</a>
+                                    </p>
+                                    <p class="bottom-price">￥999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 点击箭头 -->
+                        <div class="bottom-click">
+                            <!-- 右箭头 -->
+                            <div class="arr_right">
+                                <div class="arr-r-icon iconfont"></div>
+                            </div>
+                            <!-- 左箭头 -->
+                            <div class="arr_left">
+                                <div class="arr-l-icon iconfont"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右部 -->
+                <div class="right-cont">
+                    <a href="">
+                        <img src="img/right1.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <!-- 新品模块3 -->
+            <div class="new3">
+                <div class="new3-top">
+                    <a href="">
+                        <img src="img/new1.jpg" alt="" />
+                    </a>
+                    <div class="top-box new3-top-box">
+                        <h3>轻凉不设限</h3>
+                        <p>UA ISO-CHILL系列</p>
+                        <div class="new3-btn-box">
+                            <ul class="new-btn1 new3-btn">
+                                <li>
+                                    <a href="#" class="lable1">立即购买</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="new3-bottom">
+                    <ul class="new3-products">
+                        <!-- picture-scale图片放大特效 -->
+                        <li class="picture-scale">
+                            <div class="new3-picture">
+                                <a href="">
+                                    <img src="img/V5-1361928-476_FC.webp" alt="" />
+                                </a>
+                            </div>
+                            <div class="new3-title-box">
+                                <p class="new3-title">
+                                    <a href="">男士UA Iso-Chill跑步短袖T恤</a>
+                                </p>
+                                <p class="new3-price">￥399</p>
+                            </div>
+                        </li>
+                        <li class="picture-scale">
+                            <div class="new3-picture">
+                                <a href="">
+                                    <img src="img/V5-1361648-001_FC.webp" alt="" />
+                                </a>
+                            </div>
+                            <div class="new3-title-box">
+                                <p class="new3-title">
+                                    <a href="">男士Project Rock强森Iso-Chill短裤</a>
+                                </p>
+                                <p class="new3-price">￥549</p>
+                            </div>
+                        </li>
+                        <li class="picture-scale">
+                            <div class="new3-picture">
+                                <a href="">
+                                    <img src="img/V5-1361151-561_FC.webp" alt="" />
+                                </a>
+                            </div>
+                            <div class="new3-title-box">
+                                <p class="new3-title">
+                                    <a href="">女士UA Iso-Chill Crop背心</a>
+                                </p>
+                                <p class="new3-price">￥279</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 人气推荐 -->
+        <div class="hotProducts">
+            <h3>人气商品</h3>
+            <!-- 底部人气商品轮播图 -->
+            <div class="hot1-fs">
+                <div class="hot1-fs-hiden">
+                    <!-- 长盒子 -->
+                    <div class="hot1-fs-father">
+                        <!-- 图片模块盒子1 -->
+                        <ul class="hot1-fs-box img3">
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/hot1.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">UA拖鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥299</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/16142448619548633_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">女士UA FLOW Velociti Wind CN跑鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥909</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/16142448619548633_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士UA FLOW Velociti Wind CN跑鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥909</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 图片模块盒子2 -->
+                        <ul class="hot1-fs-box img3">
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/V5-1361733-035_FC.webp" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士Project Rock强森Brahma Bull短袖T恤</a>
+                                    </p>
+                                    <p class="hot1-price">￥329</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/V5-1361130-441_FC.webp" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士UA RUSH Seamless短袖T恤</a>
+                                    </p>
+                                    <p class="hot1-price">￥549</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/V5-1361130-001_FC.webp" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士UA RUSH Seamless短袖T恤</a>
+                                    </p>
+                                    <p class="hot1-price">￥389</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 图片模块盒子3 -->
+                        <ul class="hot1-fs-box img3">
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="安德玛/account.html">
+                                        <img src="img/16201081309211655_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="安德玛/account.html">男士UA HOVR Machina 2 CN跑鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥909</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/V5-1361721-001_FC.webp" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士Project Rock强森Brahma Bull背心</a>
+                                    </p>
+                                    <p class="hot1-price">￥299</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/16142448567277538_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士UA Project Rock 3训练鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥839</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 图片模块盒子1克隆 -->
+                        <ul class="hot1-fs-box img3">
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/hot1.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">UA拖鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥299</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/16142448619548633_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">女士UA FLOW Velociti Wind CN跑鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥909</p>
+                                </div>
+                            </li>
+                            <li class="picture-scale">
+                                <div class="hot1-picture">
+                                    <a href="">
+                                        <img src="img/16142448619548633_DEFAULT.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="hot1-title-box">
+                                    <p class="hot1-title">
+                                        <a href="">男士UA FLOW Velociti Wind CN跑鞋</a>
+                                    </p>
+                                    <p class="hot1-price">￥909</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 点击箭头 -->
+                <!-- 右箭头 -->
+                <div class="arr_right hot1-arr_right">
+                    <div class="arr-r-icon iconfont"></div>
+                </div>
+                <!-- 左箭头 -->
+                <div class="arr_left hot1-arr_left">
+                    <div class="arr-l-icon iconfont"></div>
+                </div>
+            </div>
+            <!-- 人气推荐2 -->
+            <div class="hot2-bottom">
+                <ul class="hot2-products">
+                    <!-- picture-scale图片放大特效 -->
+                    <li class="picture-scale">
+                        <div class="hot2-picture">
+                            <a href="">
+                                <img src="img/hot2-1.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="hot2-title-box">
+                            <p class="hot2-title">
+                                <a href="" class="line2">运动良伴</a>
+                            </p>
+                            <p class="hot2-price">双肩包</p>
+                        </div>
+                    </li>
+                    <li class="picture-scale">
+                        <div class="hot2-picture">
+                            <a href="">
+                                <img src="img/hot2-2.jpg" alt="" />
+                            </a>
+                        </div>
+                        <div class="hot2-title-box">
+                            <p class="hot2-title">
+                                <a href="" class="line2"> 轻盈+透气</a>
+                            </p>
+                            <p class="hot2-price">UA HOVR MACHINA 2跑鞋</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot1">
+            <p>没有找到你想要的？</p>
+            <div class="foot1-search">
+                <input type="text" /><span class="search-btn iconfont"></span>
+            </div>
+            <div class="foot1-search-sugges">
+                <span>试试搜索</span>
+                <span><a href="">直降专区</a></span>
+                <span><a href="">CURRY8 篮球鞋</a></span>
+                <span><a href="">ISO-CHILL系列</a></span>
+                <span><a href="">PROJECT ROCK系列</a></span>
+                <span><a href="">VELOCITI FLOW系列</a></span>
+            </div>
+        </div>
+        <div class="foot2">
+            <div class="foot2-box">
+                <div class="foot2-top">
+                    <div class="foot2-top-left">
+                        <div class="foot2-logo">
+                            <a href=""></a>
+                        </div>
+                        <p class="foot2-title1">获取 UA 最新资讯</p>
+                        <div class="foot2-email">
+                            <input type="email" name="" id="">
+                            <div class="foot2-shu">
+                                <p>请输入电子邮箱</p>
+                            </div>
+                            <div>
+                                <a href="">订阅</a>
+                            </div>
+                        </div>
+                        <p class="foot2-title2">关注我们</p>
+                        <ul class="foot2-flow">
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                                <img src="img/wechat-pc.jpg" alt="" />
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="foot2-ua-concat">
+                        <li>联系方式</li>
+                        <li>
+                            <a href="">
+                                <span class="foot2-phone"></span>
+                                <span>4008-206-528</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="foot2-message"></span>
+                                <span>在线客服</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="foot2-place"></span>
+                                <span>线下门店</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="foot2-ua-concat">
+                        <li>客户服务</li>
+                        <li>
+                            <a href="">会员政策</a>
+                        </li>
+                        <li>
+                            <a href="">尺码剪裁说明</a>
+                        </li>
+                        <li>
+                            <a href="">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="">加入我们</a>
+                        </li>
+                        <li>
+                            <a href="">大客户团购</a>
+                        </li>
+                        <li>
+                            <a href="">礼品卡使用章程</a>
+                        </li>
+                    </ul>
+                    <ul class="foot2-ua-concat">
+                        <li>订单及售后</li>
+                        <li>
+                            <a href="">游客订单查询</a>
+                        </li>
+                        <li>
+                            <a href="">支付说明</a>
+                        </li>
+                        <li>
+                            <a href="">物流与配送</a>
+                        </li>
+                        <li>
+                            <a href="">退换货政策说明</a>
+                        </li>
+                        <li>
+                            <a href="">公告</a>
+                        </li>
+                    </ul>
+                    <ul class="foot2-ua-concat">
+                        <li>品牌故事</li>
+                        <li>
+                            <a href="">关于品牌 </a>
+                        </li>
+                        <li>
+                            <a href="">运动明星</a>
+                        </li>
+                        <li>
+                            <a href="">媒体中心</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="foot2-bottom">
+                    <li>
+                        Copyright ©2021 Under Armour, Inc.
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="">隐私政策</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="">使用规则</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="">网站地图</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="">沪ICP备12034417号-1</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <span class="foot2-dz"></span>
+                        <a href="">电子营业执照</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <span class="foot2-hg"></span>
+                        <a href="">沪公网安备 31010102003916号</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="toTop">
+
+        </div>
+    </footer>
+    <script src="jquery-1.11.3/jquery.min.js "></script>
+    <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/animate2.js"></script>
+    <script src="js/lunbotu.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

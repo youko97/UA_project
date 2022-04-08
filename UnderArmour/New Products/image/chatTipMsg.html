@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0086)https://underarmour.live800.com/live800/chatClient/chatTipMsg.jsp?k=1&tm=1624850703539 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>chatTipMsg</title>
+<script type="text/javascript" src="./jquery-1.6.3.min.js.下载"></script>
+<script type="text/javascript" src="./messenger.js.下载"></script>
+<script type="text/javascript">
+var messenger = new Messenger("iframe1", "chatTipMsg");
+messenger.listen(function (msg) {
+	// do noting 
+});
+messenger.addTarget(window.parent, "parent");
+if(!LIVE){var LIVE = {};};
+LIVE.setSessionCookie=function(name,value){
+	document.cookie = name + "="+ escape (value);
+};
+LIVE.getCookie = function(name){
+    var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+    arr = document.cookie.match(reg);
+    if (arr) {
+        return unescape(arr[2]);
+    } else {
+        return null;
+    }
+};
+function checkChatTipCookie(){
+	var status = LIVE.getCookie("live800ChatTipS");
+	if(status){
+		var currentTime = new Date().getTime();
+		var s = "";
+		var t = null;
+		if(status.indexOf("_")!=-1){
+			var sa = status.split("_");
+			if(sa){
+				if(sa.length>0){
+					t = sa[0];//Number(sa[0]);
+				}
+				if(sa.length>1){
+					s = sa[1];
+				}
+			}
+		}else{
+			s = status;
+		}
+		if(s == "-1"){
+			var needSend = true;
+			if(t){
+				if(currentTime - t > 20 * 1000){
+					needSend = false;
+				}
+			}
+			if(needSend){
+				messenger.send("close");
+			}
+			var value = currentTime + "_2";
+			LIVE.setSessionCookie("live800ChatTipS", value);
+		}
+	}
+	setTimeout(function(){
+		checkChatTipCookie();
+	}, 1000);
+}
+setTimeout(function(){
+	checkChatTipCookie();
+}, 3000);
+</script>
+</head>
+<body marginwidth="0" marginheight="0">
+
+</body></html>

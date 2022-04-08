@@ -1,0 +1,521 @@
+/* 引用脚注 */
+#footer{
+    margin: 0;
+    width:100%; 
+    height:310px;
+}
+/* 主体部分 */
+/* 大图 */
+section{
+    position: relative;
+    width: 1320px;
+    margin: 150px auto;
+}
+.section-max-img{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+    width: 765px;
+    height: 670px;
+    text-align: center;
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.section-max-img-new{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.section-max-img-pvw{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 133px;
+    height: 48px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 48px;
+    background-color: white;
+}
+.section-max-img-pvw i{
+    position: relative;
+    top: 5px;
+    left: -5px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-position: -180px -292px;
+}
+/* 大图详情 */
+.section-max-page{
+    position: absolute;
+    top: 0;
+    left: 800px;
+    width: 400px;
+    height: 670px;
+    overflow: hidden;
+}
+.section-max-page li{
+    overflow: hidden;
+}
+/* 详情标题 */
+.section-max-page-title p{
+    margin: 5px;
+    line-height: 35px;
+    width: 350px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.section-max-page-title span{
+    line-height: 50px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.section-max-page-title span:last-of-type{
+    color: rgba(29,29,29,0.3);
+    text-decoration: line-through;
+}
+.section-max-page-title i{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-position: -186px -75px;
+    border-radius: 20px;
+}
+/* 详情内容 */
+.section-max-page-content{
+    border-top: 1px solid #f0f0f0;
+    font-size: 14px;
+    line-height: 40px;
+}
+.section-max-page-content>li{
+    margin:5px 0;
+}
+/* 颜色 */
+.section-max-page-content-color span{
+    margin-right: 6px;
+}
+/* 图片 */
+.section-max-page-content-img{
+    overflow: hidden;
+}
+.section-max-page-content-img li{
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    list-style: 60px;
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.section-max-page-content-size .img-border,
+.section-max-page-content-img .img-border{
+    border: #1d1d1d solid 2px;
+}
+.section-max-page-content-img img{
+    width: 50px;
+}
+/* 尺码表 */
+.section-max-page-content-table{
+    line-height: 50px;
+}
+.section-max-page-content-table p{
+    float: right;
+}
+.section-max-page-content-table img{
+    position: relative;
+    top: 2px;
+    width: 20px;
+}
+.section-max-page-content-table a{
+    color: #1d1d1d;
+}
+/* 尺码大小 */
+.section-max-page-content-size li{
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    width: 47px;
+    height: 38px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/* 数量添加 */
+.section-max-page-content-nums span{
+    float: left;
+    margin: 0;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    border: 1px solid black;
+}
+.section-max-page-content-minus{
+    position: relative;
+    left: 1px;
+    width: 40px;
+    border-radius: 3px 0 0 3px;
+}
+.num-background{
+    background-color: #f0f0f0;
+    cursor: no-drop;
+}
+.num-pointer{
+    cursor: pointer;
+}
+.section-max-page-content-amount{
+    width: 52px;
+}
+.section-max-page-content-plus{
+    position: relative;
+    left: -1px;
+    width: 40px;
+    border-radius: 0 3px 3px 0;
+}
+.section-max-page-content-total div{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    width: 182px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.section-max-page-content-total p{
+    position: relative;
+}
+.section-max-page-content-total div:last-of-type{
+    color: white;
+    background-color:#1d1d1d;
+}
+/* 在线客服 */
+.section-max-page-content-service{
+    font-size: 12px;
+}
+.section-max-page-content-service i{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 20px;
+    height: 18px;
+    background-position: -290px -289px;
+}
+.section-max-page-content-service a{
+    color: #1d1d1d;
+}
+.section-max-page-content-service p{
+    float: right;
+}
+/* 适合跑步 */
+.section-max-page-content-fit h6{
+    font-size: 14px;
+}
+
+/* 商品介绍 */
+.section-products-introduction{
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 1320px;
+}
+.section-products-introduction p{
+    margin-bottom: 20px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.section-product-detail span{
+    float: left;
+    font-weight: 600;
+    color: #5F5F5F;
+    font-size: 18px;
+}
+.section-product-detail li{
+    margin-left: 110px;
+    list-style: outside;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #5F5F5F;
+}
+.section-product-img li{
+    float: left;
+    margin: 0px 10px 10px 0;
+    width: 552px;
+    height: 672px;
+    background-color: #f0f0f0;
+}
+.section-product-img img{
+    width: 100%;
+}
+/* 尺码表 */
+.section-size-specification{
+    position: relative;
+    margin-bottom: 100px;
+}
+.section-size-specification>p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.section-size-specification img{
+    position:absolute;
+    width: 320px;
+    height: 320px;
+}
+.section-size-specification-table{
+    position: relative;
+    display: inline-block;
+    margin: 0 0 30px 330px;
+    width: 888px;
+    height: 220px;
+    overflow: scroll;
+}
+.section-size-specification-table table:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 148px;
+    border-collapse: collapse;
+}
+.section-size-specification-table p{
+    padding-left: 148px;
+    display: block;
+    height: 70px;
+    white-space: nowrap;
+    font-size: 0;
+}
+.section-size-specification span{
+    display: inline-block;
+    line-height: 70px;
+    width: 148px;
+    height: 70px;
+    text-align: center;
+    font-size: 14px;
+}
+.section-size-specification-table-th{
+    position: absolute;
+    left: 330px;
+    z-index: 1;
+}
+.section-size-specification-table-th span{
+    display: block;
+    left: 0;
+}
+.section-size-measure{
+    width: 888px;
+}
+
+.table-evenClass{
+    background-color:#eee;
+}
+.table-oddClass{
+    background-color:white;
+}
+.table-addclass{
+    color: white;
+    background-color:#5f5f5fbb;
+}
+.table-TBborder{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.table-LRborder{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+/* 测量方法 */
+.section-size-measure{
+    margin-left: 330px;
+}
+.section-size-measure p:first-child{
+    color: #1d1d1d;
+    font-weight: 500;
+    line-height: 30px;
+}
+.section-size-measure p:last-child{
+    color: #4A4A4A;
+    font-size: 14px;
+}
+/* 价格说明 */
+.section-price-escription{
+    margin: 60px 0 0 -40px;
+    width: 1320px;
+    height: 130px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.section-price-escription p:first-of-type{
+    line-height: 50px;
+    color: #1d1d1d;
+    font-weight: 500px;
+}
+.section-price-escription p:last-of-type{
+    font-size: 14px;
+    color: #5F5F5F;
+}
+/* 人气商品 */
+.section-Popular-goods{
+    position: relative;
+    width: 1320px;
+    margin: 50px -40px;
+    overflow: hidden;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d0d0d0;
+    overflow: hidden;
+}
+.section-Popular-goods>span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+    border-radius: 15px;
+    background-color: white;
+    border: #d0d0d0 1px solid;
+    cursor: pointer;
+}
+.section-Popular-goods-left{
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 260px;
+}
+.section-Popular-goods-right{
+    z-index: 1;
+    position: absolute;
+    right: -5px;
+    top: 260px;
+}
+
+.section-Popular-goods>h1{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 80px;
+}
+.section-Popular-goods ul{
+    position: relative;
+    left: 0;
+
+    margin-bottom: 70px;
+    padding-left: 10px;
+    white-space: nowrap;
+}
+.section-Popular-goods li{
+    margin-right: 10px;
+    display: inline-block;
+    width: 24%;
+}
+.section-Popular-goods li img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.section-Popular-goods li div{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background-color:#f0f0f0;
+    height: 400px;
+    line-height: 400px;
+}
+.section-Popular-goods li p{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #1D1D1D;
+    font-weight: bold;
+    line-height: 30px;
+}
+.section-Popular-goods li span,.section-Popular-goods>p{
+    font-size: 14px;
+    color: #5F5F5F;
+}
+/* 没有找到你想要的 */
+.section-unfound{
+    position: relative;
+    width:1000px;
+    margin: 60px auto;
+}
+.section-unfound p:first-of-type{
+    color: #1d1d1d;
+    font-size: 14px;
+    line-height: 30px;
+}
+.section-unfound input{
+    width: 1000px;
+    height: 50px;
+    font-size: 30px;
+    border-bottom: 1px solid #d0d0d0;
+    outline:none;
+    border:none;
+    border-bottom: 1px solid #d0d0d0;
+}
+.section-unfound i{
+    position: absolute;
+    right: 0;
+    top: 38px;
+    width: 40px;
+    height: 40px;
+    background-position: -288px -110px;
+    cursor: pointer;
+}
+.section-unfound p:last-of-type,.section-unfound a{
+    color: #5F5F5F;
+    font-size: 12px;
+    line-height: 60px;
+}
+.section-unfound a{
+    text-decoration: underline;
+}
+/* 点击回到顶部标签 */
+#toTop{
+    display: none;
+    position: fixed;
+    right: 60px;
+    bottom: 80px;
+    width: 40px;
+    height: 40px;
+    background-position: -180px -156px;
+    cursor: pointer;
+}
+/* 顶部隐藏框 */
+.topHide{
+    z-index: 10px;
+    padding: 15px 100px;
+    position: fixed;
+    left: 0;
+    top: -100px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: #d0d0d0 1px solid;
+}
+#topHide{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+.topHide-text{
+    position: absolute;
+    left: 0;
+}
+.topHide-text p:first-of-type{
+    font-weight: 500;
+    line-height: 30px;
+}
+.topHide-text p:last-of-type{
+    font-size:14px;
+}
+#topHide>div:last-of-type{
+    position: absolute;
+    right: 0;
+}
+

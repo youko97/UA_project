@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yinyin {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    display: none;
+    z-index: 10;
+}
+
+.login_register {
+    width: 447px;
+    margin: auto;
+    background-color: #fff;
+    position: fixed;
+    top: 15%;
+    left: 38%;
+}
+
+
+/* 注册 */
+
+#div1 {
+    width: 100%;
+    height: 660px;
+    margin: auto;
+    /* margin-top: 50px; */
+    background-color: #FFFFFF;
+    /* display: none; */
+}
+
+#div1_div1 {
+    width: 380px;
+    height: 545px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+}
+
+.div1_div11X {
+    width: 20px;
+    height: 20px;
+    /* background-color: aliceblue; */
+    padding: 10px 360px;
+}
+
+#div1_div1 h4 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: #1d1d1d;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.div1_div1ul {
+    list-style: none;
+    text-align: center;
+}
+
+.div1_div1ul li:nth-child(1) {
+    width: 220px;
+    height: 25px;
+    /* 	background-color: aliceblue; */
+}
+
+.div1_div1ul li:nth-child(2) {
+    width: 160px;
+    height: 25px;
+    /* background-color: aliceblue; */
+}
+
+.div1_div1ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+a {
+    cursor: pointer;
+}
+
+
+/* a, a:hover {
+    text-decoration: none;
+} */
+
+.div1_div1ul li a {
+    display: block;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #d0d0d0;
+    line-height: 15px;
+    padding: 0px 0;
+    position: relative;
+}
+
+.dialog-title-box {
+    font-size: 0;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 17px;
+}
+
+
+/* 表单*/
+
+.divform {
+    width: 370px;
+    height: 300px;
+    /* border: 1px solid green; */
+    /* margin-top: 7px; */
+    padding: 3px;
+    margin: auto;
+}
+
+.inputs {
+    width: 350px;
+    height: 40px;
+    /* border: 1px solid gainsboro; */
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 21px;
+    position: relative;
+}
+
+.inputs_label1 {
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: -9px;
+    left: 15px;
+    font-size: 14px;
+}
+
+.inputs_input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    margin: auto;
+    text-indent: 15px;
+    transition: border-color ease-in-out .15s;
+}
+
+.inputs_input:focus {
+    outline: none;
+    border: 1px solid #1d1d1d;
+}
+
+.yzImg {
+    width: 100px;
+    height: 35px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    border-radius: 5px;
+}
+
+.yzImg img {
+    width: 98px;
+    height: 33px;
+    border-radius: 5px;
+}
+
+.spanAb {
+    font-family: "楷体";
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    opacity: 0.1;
+    cursor: pointer;
+}
+
+.yzDx {
+    width: 90px;
+    height: 35px;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.yzDx a {
+    line-height: 34px;
+    text-align: center;
+}
+
+.jz {
+    width: 100px;
+    height: 20px;
+    margin-top: 26px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+/* 登录按钮 */
+
+.divBtns {
+    width: 350px;
+    height: 40px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 18px;
+}
+
+.buttons {
+    width: 350px;
+    height: 40px;
+    background-color: #1D1D1D;
+    margin: auto;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+}
+
+.txt1 {
+    font-size: 12px;
+    color: #1d1d1d;
+    line-height: 20px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.divTxt {
+    width: 350px;
+    height: 130px;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.divTxtUl {
+    margin-left: 16px;
+    font-size: 12px;
+}
+
+.divTxtUl li {
+    padding: 4px;
+    list-style: inherit;
+    font-size: 12px;
+    color: #5f5f5f;
+    line-height: 14px;
+    margin-bottom: 6px;
+}
+
+#pPhone,
+#pImg,
+#pDX {
+    color: red;
+    margin-left: 10px;
+}
+
+
+/* 登录 */
+
+#div2 {
+    width: 100%;
+    height: 593px;
+    margin: auto;
+    margin-top: -10px;
+    background-color: #FFFFFF;
+    display: none;
+    padding-top: 7px;
+}
+
+#div2_div1 {
+    width: 380px;
+    height: 500px;
+    /* border: 1px solid blue; */
+    margin: auto;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#div2_div1 h4 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: #1d1d1d;
+    font-family: PingFangSC-Medium, PingFang SC;
+}
+
+.div2_div1ul {
+    list-style: none;
+    text-align: center;
+}
+
+.div2_div1ul li:nth-child(1) {
+    width: 220px;
+    height: 25px;
+    /* 	background-color: aliceblue; */
+}
+
+.div2_div1ul li:nth-child(2) {
+    width: 160px;
+    height: 25px;
+    /* background-color: aliceblue; */
+}
+
+.div2_div1ul li {
+    display: inline-block;
+    text-align: center;
+}
+
+.div2_div1ul li a {
+    display: block;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #d0d0d0;
+    line-height: 15px;
+    padding: 0px 0;
+    position: relative;
+}
+
+
+/* 登录表单 */
+
+.jz2 {
+    width: 350px;
+    height: 30px;
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.wjPwd {
+    margin-left: 210px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.wjPwd a {
+    color: gray;
+}
+
+#PPhone2,
+#Ppwd {
+    color: red;
+    margin-left: 10px;
+}
+
+
+/* 点击出现黑色线 */
+
+.hx1 {
+    display: inline-block;
+    width: 180px;
+    border: 1px solid black;
+    background-color: #000000;
+    margin-top: 3px;
+}
+
+.hx2 {
+    display: inline-block;
+    width: 130px;
+    border: 1px solid white;
+    margin-top: 3px;
+}
+
+.hx3 {
+    display: inline-block;
+    width: 180px;
+    border: 1px solid white;
+    margin-top: 3px;
+}
+
+.hx4 {
+    display: inline-block;
+    width: 140px;
+    border: 1px solid black;
+    background-color: #000000;
+    margin-top: 3px;
+}
+
+.namess {
+    font-size: 13px;
+}

@@ -1,0 +1,512 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+body, html {
+    font-family: PingFangSC-Regular,'微软雅黑','Microsoft YaHei',sans-serif,armour_w_rg;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0;
+    width: 100%;
+    min-width: 320px;
+    min-height: 100%;
+}
+.icon{
+    background: url(../images/icon@2x.png) no-repeat;
+    background-size: 342px 338px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+/* 头部 */
+header{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+.header-top{
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: 64px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+.header-top a{
+    font-size: 12px;
+    color: white;
+}
+/* 返回购物袋 */
+.header-top>a{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.header-top a i{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    background-position: -154px -133px;
+    width: 15px;
+    height: 15px;
+}
+/* logo */
+.header-top>img{
+    margin-top: 20px;
+    width: 40px;
+}
+/* 在线客服 */
+.header-top-phone{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.header-top-phone a:first-of-type i{
+    margin: 0 5px;
+    background-position: -226px -293px;
+}
+.header-top-phone a:last-of-type i{
+    margin: 0 10px;
+    background-position: -325px -68px;
+}
+/* 主体 */
+section{
+    position: relative;
+}
+.section-account-content{
+    width: 55%;
+    margin: 60px 0 60px 130px;
+}
+/* 主体主题 */
+.section-account-content-title{
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+.section-account-content-title img{
+    margin: 0 10px;
+    width: 52px;
+}
+.section-account-content-title span{
+    font-size: 40px;
+    font-weight: bold;
+}
+/* 结算按钮 */
+.section-account-content-title-btn{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 206px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.section-account-content-title-btn p{
+    position: relative;
+}
+/* 标题 */
+.section-account-content h2{
+    margin: 30px 0;
+    width: 100%;
+    line-height: 70px;
+    font-size: 24px;
+    border-bottom: 1px solid #d0d0d0;
+}
+/* 配送地址 */
+.section-account-content-site-name,
+.section-account-content-site-city{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.section-account-content-site-name div,.section-account-content-site-name p{
+    position: relative;
+    width: 49%;
+    display: inline-block;
+}
+.section-account-content-site-name div:last-of-type{
+    overflow: hidden;
+    float: right;
+}
+.section-account-content-site input,
+.section-account-content-site select,
+.section-account-content-bill-mes input,
+.section-account-content-bill-firm input,
+.section-order-summary-collect-discounts input{
+    padding:0 10px;
+    height: 44px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    font-size: 14px;
+}
+.input-border-red{
+    border:1px solid red;
+}
+.input-p{
+    font-size:12px;
+    padding-left: 20px;
+    color: red;
+    line-height: 30px;
+}
+.section-account-content-site span,
+.section-account-content-bill-mes span,
+.section-account-content-bill-firm span,
+.section-order-summary-collect-discounts span{
+    position: relative;
+    padding: 0 10px;
+    top: 10px;
+    left: 15px;
+    font-size: 12px;
+    color: #151515;
+    background-color: white;
+}
+.section-account-content-site-city div,
+.section-account-content-bill-mes div{
+    position: relative;
+    margin: 0 auto;
+    width: 33%;
+}
+.section-account-content-site-city div:first-of-type,
+.section-account-content-bill-mes div:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.section-account-content-site-city div:last-of-type,
+.section-account-content-bill-mes div:last-of-type{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.section-account-content-site-city p{
+    z-index: 1;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    background-color: white;
+}
+.section-account-content-site-city i{
+    position: absolute;
+    top: 33px;
+    right: 10px;
+    background-position: -178px -237px;
+}
+.section-account-content-site-sites{
+    width: 100%;
+    margin: 15px 0;
+}
+.section-account-content-site-email{
+    width: 50%;
+}
+/* 配送方式 */
+.section-account-content-distribution p{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.section-account-content-distribution i{
+    position: relative;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    overflow: visible;
+    background-position: -66px -258px;
+}
+/* 支付方式 */
+.section-account-content-pay div{
+    margin-right: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+}
+
+.alipay{
+    width: 88px;
+    height: 32px;
+    background-position: -80px -207px;
+    overflow: hidden;
+}
+
+.wxpay{
+    width: 105px;
+    height: 32px;
+    background-position: -180px 0px;
+    overflow: hidden;
+}
+/* 需要发票 */
+.section-account-content-bill{
+    position: relative;
+    margin-top: 30px;
+    padding-bottom: 40px;
+    width: 100%;
+    border-bottom: 1px solid #d0d0d0;
+    overflow: hidden;
+}
+.section-account-content-bill>span{
+    margin-left: 30px;
+}
+.bill-checkbox{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-position: -28px -294px;
+    cursor: pointer;
+}
+.bill-checkbox-position{
+    background-position: -93px -294px;
+}
+/* 发票信息 */
+.section-account-content-bill-hide{
+    display: none;
+}
+.section-account-content-bill-hide>p{
+    position: relative;
+    left: -20px;
+    line-height: 60px;
+}
+.section-account-content-bill-hide>p span{
+    position: relative;
+    margin: 0 10px 0 20px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    border: 1px solid #1d1d1d;
+    cursor: pointer;
+}
+.bill-bgc{
+    background-color: #1d1d1d;
+}
+.section-account-content-bill-firm,
+.section-account-content-bill-mes{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.section-account-content-bill-firm{
+    display: none;
+}
+.section-account-content-bill-firm div{
+    display: inline-block;
+    width: 49.5%;
+    overflow: hidden;
+}
+/* 友情提示 */
+.section-account-content-bill-firm>p{
+    margin-top: 30px;
+    color: #5F5F5F;
+    font-size: 14px;
+}
+.section-account-content-bill-firm ul{
+    margin: 30px 0;
+}
+.section-account-content-bill-firm li{
+    list-style: inside;
+    font-size: 12px;
+}
+.section-account-content-bill-firm li:first-of-type{
+    color: #DA0000;
+}
+/* 提交订单 */
+.section-account-content-btn{
+    position: relative;
+}
+.section-account-content-btn>p,
+.section-account-content-btn a{
+    position: relative;
+    font-size: 12px;
+    color: #1d1d1d;
+    text-decoration: underline;
+}
+.section-account-content-btn>p{
+    margin: 30px 0 15px;
+    padding-left: 25px;
+}
+.section-account-content-btn span{
+    position: absolute;
+    top: 32px;
+    display: block;
+    width:200px;
+    height: 44px;
+    background-color: #d0d0d0;
+    opacity: 0.6;
+}
+.section-account-content-payBtn{
+    width:200px;
+    height: 44px;
+    background-color: red;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.section-account-content-payBtn p{
+    position: relative;
+    line-height: 44px;
+    text-align: center;
+}
+/* 订单汇总 */
+.section-order-summary{
+    position: absolute;
+    right: 15px;
+    top: -130px;
+    width: 30%;
+    height: 1300px;
+    padding: 16px 16px 56px;
+    background: #f7f7f7;
+}
+
+.section-order-summary>div{
+    width: 99%;
+    padding: 50px;
+    margin: 70px auto;
+    background-color: white;
+}
+.section-order-summary-collect{
+    width: 100%;
+}
+.section-order-summary-collect h5{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.section-order-summary-collect p{
+    line-height: 30px;
+}
+.section-order-summary-collect p span:last-of-type{
+    float: right;
+}
+.section-order-summary-collect-discounts{
+    position: relative;
+    margin: 10px 0 20px;
+    width: 100%;
+}
+.section-order-summary-collect-discounts i{
+    position: absolute;
+    top: 33px;
+    right: 15px;
+}
+.section-order-summary-collect p:last-of-type span,
+.section-order-summary-details h5{
+    font-size: 16px;
+    color: #1d1d1d;
+    font-weight: bold;
+}
+.section-order-summary-collect p:last-of-type {
+    padding-top: 20px;
+    border-top: 1px solid #d0d0d0;
+}
+/* 商品详情 */
+.section-order-summary-details{
+    position: relative;
+    padding-top: 60px;
+    overflow: hidden;
+}
+.section-order-summary-details h5 span{
+    margin-left: 20px;
+    font-size: 12px;
+}
+.section-order-summary-details-img{
+    margin-top: 30px;
+    width: 138px;
+    height: 172px;
+    background-color: #f0f0f0;
+}
+.section-order-summary-details img{
+    width: 138px;
+    height: 172px;
+}
+.section-order-summary-details-content{
+    position:absolute;
+    left: 150px;
+    top: 110px;
+    width: 200px;
+}
+.section-order-summary-details-content p:nth-of-type(2){
+margin: 10px 0;
+}
+.section-order-summary-details-content p span{
+    display: block;
+    font-size: 12px;
+    color: #5f5f5f;
+}
+.section-order-summary ul{
+    width: 90%;
+    padding-left: 50px;
+    height: 200px;
+}
+.section-order-summary li{
+    list-style: inside;
+    font-size: 12px;
+    color: #5f5f5f;
+    margin-bottom: 10px;
+}
+/* 脚注 */
+footer{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #f0f0f0;
+}
+footer div{
+    width: 1000px;
+    height: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+}
+footer ul,footer p{
+    float: left;
+    color: #7C7C7C;
+    font-size: 12px;
+}
+footer li{
+    float: left;
+    padding-left: 10px;
+    color: #7C7C7C;
+    font-size: 12px;
+}
+footer li span{
+    margin: 0 10px;
+}
+.footer-i1{
+    position: relative;
+    top: 5px;
+    background-position: -325px -197px;
+}
+.footer-i2{
+    position: relative;
+    top: 5px;
+    background-position: -325px -230px;
+}
+
+

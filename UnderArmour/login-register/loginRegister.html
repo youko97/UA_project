@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="css/loginRegister.css" rel="stylesheet" />
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/register.js"></script>
+
+
+</head>
+
+<body style="background-color: gainsboro;">
+    <button id="btn">点击</button>
+    <div class="yinyin">
+        <div class="login_register">
+            <!-- 注册 -->
+            <div id="div1">
+                <div id="div1_div1">
+                    <!-- 点击x -->
+                    <div id="xImg" class="div1_div11X"><img src="image/x.png" width="15"></div>
+                    <script>
+                        $(function() {
+                            var xImg = document.getElementById("xImg");
+                            var yinyin = document.querySelector(".yinyin");
+                            xImg.onclick = function() {
+                                yinyin.style.display = "none";
+                            }
+                        })
+                    </script>
+                    <h4>欢迎来到<strong>UA</strong>运动家俱乐部</h4>
+
+                    <ul class="div1_div1ul dialog-title-box e-switch">
+                        <li onclick="TurnToRegister()" class="div1_div1ulli1">
+                            <a style="color: #000000;font-size: 14px;" class="aP1">手机号快捷登录/注册</a>
+                            <span class="hx1"></span>
+                        </li>
+                        <li onclick="TurnToLogin()" class="div1_div1ulli2">
+                            <a class="aP2" style="font-size: 14px;">账号密码登录</a>
+                            <span class="hx2"></span>
+                        </li>
+                    </ul>
+                    <!-- 注册登录跳转 -->
+                    <script>
+                        // 登录
+                        var TurnToLogin = () => {
+                                document.getElementById("div2").style.display = "block";
+                                document.getElementById("div1").style.display = "none";
+                            }
+                            // 注册
+                        var TurnToRegister = () => {
+                            document.getElementById("div1").style.display = "block";
+                            document.getElementById("div2").style.display = "none";
+                        }
+                    </script>
+                    <!-- 表单 -->
+                    <form id="myRegisterForm">
+                        <div class="divform">
+                            <div class="inputs">
+                                <label class="inputs_label1">手机号码</label>
+                                <input id="iptPhone" class="inputs_input" type="text" />
+                                <p style="font-size: 13px;" id="pPhone"></p>
+                            </div>
+                            <br>
+                            <div class="inputs divImgYz">
+                                <label class="inputs_label1">图形验证码</label>
+                                <input id="iptImg" class="inputs_input imgYz" type="text" maxlength="4" />
+                                <!-- 图形验证 -->
+                                <div id="result" onclick="getRanNum()" class="yzImg">
+                                    <span class="spanAb">A,S,D,C</span>
+                                    <!-- <img src="./image/securityImageLogin.jpg"/> -->
+                                </div>
+                                <p id="pImg" style="font-size: 13px;"></p>
+                                <script>
+                                    var result = [];
+
+                                    function getRanNum() {
+                                        result = [];
+                                        for (var i = 0; i < 4; i++) {
+                                            var ranNum = Math.ceil(Math.random() * 25); //生成一个0到25的数字
+                                            //大写字母'A'的ASCII是65,A~Z的ASCII码就是65 + 0~25;然后调用String.fromCharCode()传入ASCII值返回相应的字符并push进数组里
+                                            result.push(String.fromCharCode(65 + ranNum));
+                                        }
+                                        document.getElementById('result').innerText = result.toString();
+                                        document.getElementById('result').style.fontSize = "24px";
+                                        document.getElementById('result').style.fontFamily = "楷体";
+                                        document.getElementById('result').style.opacity = "0.1";
+                                        document.getElementById('result').style.lineHeight = "30px";
+                                    }
+                                </script>
+                            </div>
+                            <br>
+                            <div class="inputs">
+                                <label class="inputs_label1">短信验证</label>
+                                <input id="iptDx" class="inputs_input" type="text" />
+                                <!-- 短信验证 -->
+                                <div class="yzDx">
+                                    <a id="button">
+                                        <!-- 获取验证码 -->
+                                    </a>
+                                </div>
+                                <p id="pDX" style="font-size: 13px;">
+                                    </span>
+                            </div>
+                            <script src="./js/daojishiYZM.js"></script>
+
+                            <!-- 记住我 -->
+                            <div class="jz">
+                                <input class="jizhu" type="checkbox" /> 记住我
+                            </div>
+                            <div class="divBtns">
+                                <button class="buttons">登录</button>
+                            </div>
+                            <br />
+                            <p class="txt1">即刻加入UA运动家俱乐部，开启您的专享会员礼遇:</p>
+                            <div class="divTxt">
+                                <ul class="divTxtUl">
+                                    <li>会员优享商品特权</li>
+                                    <li>第一时间获得新品资讯</li>
+                                    <li>积分礼遇，享消费购物积分</li>
+                                    <li>品牌专属俱乐部体验与活动</li>
+                                    <li>更全面的售后服务</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- 登录 -->
+            <div id="div2">
+                <div id="div2_div1">
+                    <!-- 点击x -->
+                    <div id="xImg2" class="div1_div11X"><img src="image/x.png" width="15"></div>
+                    <script>
+                        $(function() {
+                            var xImg2 = document.getElementById("xImg2");
+                            var yinyin = document.querySelector(".yinyin");
+                            xImg2.onclick = function() {
+                                yinyin.style.display = "none";
+                            }
+                        })
+                    </script>
+                    <h4>欢迎来到<strong>UA</strong>运动家俱乐部</h4>
+
+                    <ul class="div2_div1ul dialog-title-box e-switch">
+                        <li onclick="TurnToRegister()" class="div2_div1ulli1">
+                            <a class="aP1" style="font-size: 14px;">手机号快捷登录/注册</a>
+                            <span class="hx3"></span>
+                        </li>
+                        <li onclick="TurnToLogin()" class="div2_div1ulli2">
+                            <a style="color: #000000;font-size: 14px;" class="aP2">账号密码登录</a>
+                            <span class="hx4"></span>
+                        </li>
+                    </ul>
+                    <!-- 登录表单 -->
+                    <form id="myLoginForm">
+                        <div class="divform">
+                            <div class="inputs">
+                                <label class="inputs_label1">手机号码/邮箱</label>
+                                <input id="iptPhone2" class="inputs_input" type="text" />
+                                <p style="font-size: 13px;" class="namess" id="PPhone2"></p>
+                            </div>
+                            <br />
+                            <div class="inputs">
+                                <label class="inputs_label1">密码</label>
+                                <input id="pwd" class="inputs_input" type="password" />
+                                <p id="Ppwd" style="font-size: 13px;"></p>
+                            </div>
+                            <!-- 记住我 -->
+                            <div class="jz2">
+                                <p>
+                                    <span>
+											<input class="jizhu" type="checkbox" /> 记住我
+										</span>
+                                    <span class="wjPwd"><a href="#">忘记密码?</a></span>
+                                </p>
+                            </div>
+                            <div class="divBtns">
+                                <button class="buttons">登录</button>
+                            </div>
+                            <br />
+                            <p class="txt1">即刻加入UA运动家俱乐部，开启您的专享会员礼遇:</p>
+                            <div class="divTxt">
+                                <ul class="divTxtUl">
+                                    <li>会员优享商品特权</li>
+                                    <li>第一时间获得新品资讯</li>
+                                    <li>积分礼遇，享消费购物积分</li>
+                                    <li>品牌专属俱乐部体验与活动</li>
+                                    <li>更全面的售后服务</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <script src="js/login.js"></script>
+        </div>
+    </div>
+    <!-- 模态框 -->
+    <script>
+        var btn = document.getElementById("btn");
+        var yinyin = document.querySelector(".yinyin");
+        btn.onclick = function() {
+            yinyin.style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

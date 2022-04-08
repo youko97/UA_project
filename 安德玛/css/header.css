@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type:none;
+}
+.icon{
+    background-image: url(../images/icon@2x.png);
+    background-size: 342px 338px;
+    background-repeat: no-repeat;
+}
+body{
+    background-color: #fff;
+}
+/* 头部样式 */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1d1d1d;
+    z-index: 2;
+}
+.header-one{
+    position: relative;
+    margin: 0 auto 10px;
+    width: 1320px;
+    height: 28px;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.header-two{
+    position: relative;
+    width: 100%;
+    border-top: 1px solid  #FFFFFF;
+}
+/* 在线客服 */
+.header-service{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #FFFFFF;
+}
+/* 全场满199免运费 */
+.header-freight{
+    position: relative;
+    top: 10px;
+    margin: 0 auto ;
+    width: 690px;
+    height: 15px;
+    margin: 0 auto ;
+    overflow: hidden;
+}
+.header-cartoon{
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100px;
+}
+/* 欢迎登录注册 */
+.header-greet{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #FFFFFF
+}
+.header-greet a{
+    margin-left: 10px;
+    color: #FFFFFF
+}
+/* 头部导航 */
+.header-nav{
+    position: relative;
+    margin: 0 auto;
+    height: 64px;
+    width: 1320px;
+}
+
+/* logo */
+.header-nav>a{
+    position: absolute;
+    top: 15px;
+}
+.header-nav>a img{
+    width: 55px;
+}
+/* 导航 */
+.header-ul{
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 64px;
+    line-height: 64px;
+}
+/* 导航条样式 */
+.header-ul li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin-right: 40px;
+    height: 64px;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+.header-ul li p{
+    position: relative;
+    top: 0px;
+}
+.header-ul li div{
+    margin-top: 10px;
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    overflow: hidden;
+}
+.header-ul li:last-of-type div{
+    width: 100px;
+}
+/* 下边框 */
+.header-ul li div:last-of-type{
+    display: none;
+    position: absolute;
+    top: 0px;
+    border-bottom:2px solid #FFFFFF;
+}
+
+
+/* 导航隐藏框 */
+.header-hunt-hidden{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    width: 100%;
+    height: 490px;
+    padding: 60px;
+    background-color: white;
+}
+/* 隐藏框详情布局 */
+.header-hunt-hidden li{
+    float:left;
+    width: 100px;
+    margin-right: 50px;
+}
+.header-hunt-hidden-img img{
+    width: 300px;
+}
+header .header-hunt-hidden-img{
+    width: 300px;
+}
+header .header-hunt-hidden-reco{
+    width: 170px;
+}
+/* 大图及文字样式 */
+.header-hunt-hidden-img h4,.header-hunt-hidden-brand h4{
+    margin: 15px 0;
+}
+.header-hunt-hidden-img span{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.header-hunt-hidden dt{
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.header-hunt-hidden dd{
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #1d1d1d;
+}
+.header-hunt-hidden-reco-red{
+    color: red;
+}
+/* 品牌故事 */
+.header-hunt-hidden-brand{
+    padding-left: 250px;
+}
+.header-hunt-hidden-brand img{
+    width: 100%;
+}
+.header-hunt-hidden-brand li{
+    width: 20%;
+}
+.header-hunt-hidden a{
+    border-bottom:1px solid #1d1d1d;
+}
+/* 下边框过度效果 */
+.header-hunt-hidden span{
+    padding-bottom: 5px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.25s;
+    overflow: hidden;
+}
+.header-hunt-hidden span::before{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 0;
+    height: 0;
+    top: 21px;
+    left: -10px;
+}
+.header-hunt-hidden span:hover::before {
+    border: 1px solid black;
+    width: 200%;
+    border-bottom-color: #FFFFFF;
+    transition: width 0.25s ease-out;
+}
+
+/* 搜索 */
+.header-hunt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+    line-height: 64px;
+}
+.header-hunt input{
+    position: relative;
+    left: 45px;
+    bottom: 5px;
+    padding: 3px;
+    width: 184px;
+    font-size: 12px;
+    color: #FFFFFF;
+    border:none;
+    background-color: #1D1D1D;
+    outline: none;
+    border-bottom: 1px solid #FFFFFF;
+}
+.header-hunt-icon{
+    position: absolute;
+    left: 160px;
+    bottom: 0;
+    display: block;
+}
+
+.header-hunt-icon i{
+    display: inline-block;
+    background-position: 323px 18px;
+}
+
+.header-hunt span{
+    position: relative;
+    left: 0;
+    display: inline-block;
+    margin: 10px 0 0 20px;
+    width: 20px;
+    height: 20px;
+}
+/* 放大镜 */
+.header-hunt-search{
+    background-position: -48px -293px;
+}
+.header-hunt-search-i{
+    position: absolute;
+    top: 10px;
+    left: 45px;
+    width: 190px;
+    height: 50px;
+    background-color: #1d1d1d;
+    opacity: 0.6;
+}
+/* 爱心 */
+.header-hunt-attention{
+    cursor: pointer;
+    background-position: -247px -293px;
+}
+/* 爱心遮罩层 */
+.header-hunt-attention-i{
+    position: absolute;
+    top: 13px;
+    left: 255px;
+    width: 20px;
+    height: 20px;
+    background-color: #1d1d1d;
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* 购物袋 */
+.header-hunt-cart{
+    background-position: -322px -47px;
+}
+.header-hunt-cart-num{
+    position: absolute;
+    top: 11px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    line-height: 16px;
+    color: white;
+    background-color: red;
+    border-radius: 9px;
+}
+
+/* 隐藏购物袋 */
+.header-hunt-cart-box{
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: 5;
+    width:0;
+    height: 1000px;
+    background-color: white;
+    overflow: hidden;
+}
+/* 关闭按钮 */
+.header-hunt-cart-box-btn{
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 20px;
+    height: 20px;
+    background-position: -134px -20px;
+    cursor:pointer;
+}
+/* 购物袋标题 */
+.header-hunt-cart-box-title{
+    margin: 150px auto 0;
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #d0d0d0;
+}
+/* 隐藏购物袋内容 */
+.header-hunt-cart-box-content{
+    margin: 10px auto;
+    width: 320px;
+    height: 300px;
+}
+
+.header-hunt-cart-box-content-page{
+    padding: 16px 0;
+    height: 180px;
+    border-bottom: 1px solid #d0d0d0;
+}
+.header-hunt-cart-box-content-page a{
+    float: left;
+    margin-right: 10px ;
+    width: 104px;
+    height: 130px;
+    background-color: #eee;
+}
+.header-hunt-cart-box-content-page p{
+    height: 20px;
+    font-size: 12px;
+    color: #5f5f5f
+}
+.header-hunt-cart-box-content-page p:first-of-type{
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 14px;
+    color: black;
+}
+/* 购物袋删除商品 */
+.header-hunt-cart-box-content-del{
+    margin-top: 10px;
+}
+.header-hunt-cart-box-content-del span:first-of-type{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.del{
+    text-align: center;
+    line-height: 150px;
+    font-size: 12px;
+    color: #5f5f5f;
+}
+/* 购物袋金额定位 */
+.header-hunt-cart-box-content-del span:last-of-type,
+.header-hunt-cart-box-content-total span:last-of-type{
+    float: right;
+    margin-right: 5px;
+}
+/* 购物袋合计 */
+.header-hunt-cart-box-content-total{
+    line-height: 60px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header-hunt-cart-box-content-btn{
+    width: 320px;
+    height: 45px;
+    background-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.header-hunt-cart-box-content-btn p{
+    position: relative;
+    line-height: 45px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+}
+

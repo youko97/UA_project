@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单编辑</title>
+    <link rel="shortcut icon" href="../img/bitbug_favicon.ico">
+    <link rel="stylesheet" href="./css/order.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/order.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <a href="./account.html"><i class="icon"></i><span> 返回购物袋</span></a>
+            <img src="./images/header-logo.png" alt="">
+            <p class="header-top-phone">
+                <a href="#"><i class="icon"></i><span>在线客服</span></a>
+                <a href="#"><i class="icon"></i><span>4008-206-528</span></a>
+            </p>
+        </div>
+    </header>
+    <section>
+        <div class="section-account-content">
+            <div class="section-account-content-title">
+                <img src="./images/checkout-logo.png" alt="">
+                <span>结算</span>
+                <div class="section-account-content-title-btn">
+                    <p>登录享受快捷结算</p>
+                    <p>登录享受快捷结算</p>
+                </div>
+            </div>
+            <h2>配送地址</h2>
+            <div class="section-account-content-site">
+                <div class="section-account-content-site-name">
+                    <div>
+                        <span>收件人姓名</span><input type="text" class="user">
+                        <p></p>
+                    </div>
+                    <div>
+                        <span>手机号码</span><input type="text" class="tel">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="section-account-content-site-city">
+                    <div>
+                        <span>省</span>
+                        <i class="icon"></i>
+                        <input type="text">
+                        <p></p>
+                    </div>
+                    <div>
+                        <span>市</span>
+                        <i class="icon"></i>
+                        <input type="text">
+                        <p></p>
+                    </div>
+                    <div>
+                        <span>区</span>
+                        <i class="icon"></i>
+                        <input type="text">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="section-account-content-site-sites">
+                    <span>具体地址</span>
+                    <input type="text" class="sites">
+                    <p></p>
+                </div>
+                <div class="section-account-content-site-email">
+                    <span>电子邮箱</span>
+                    <input type="email" class="email">
+                    <p></p>
+                </div>
+            </div>
+            <h2>配送方式</h2>
+            <div class="section-account-content-distribution">
+                <p><i class="icon"></i><span>顺丰快递配送</span></p>
+                <span>不在顺丰快递配送区域内的地址将根据当地情况选择合适的第三方快递转寄</span>
+            </div>
+            <h2>支付方式</h2>
+            <div class="section-account-content-pay">
+                <div>
+                    <i class="icon alipay"></i>
+                </div>
+                <div>
+                    <i class="icon wxpay"></i>
+                </div>
+            </div>
+            <div class="section-account-content-bill">
+                <i class="icon bill-checkbox bill"></i>
+                <span>需要发票</span>
+                <div class="section-account-content-bill-hide">
+                    <p>
+                        <span class="bill-bgc"></span>个人发票
+                        <span></span>企业发票
+                    </p>
+                    <div class="section-account-content-bill-mes">
+                        <div>
+                            <span>姓名</span>
+                            <input type="text">
+                            <p></p>
+                        </div>
+                        <div>
+                            <span>*电子发票通知手机号</span>
+                            <input type="text" placeholder="电子发票通知手机号(必填)">
+                            <p></p>
+                        </div>
+                        <div>
+                            <span>电子发票通知邮箱</span>
+                            <input type="text" placeholder="电子发票通知邮箱(必填)">
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="section-account-content-bill-firm">
+                        <div>
+                            <span>*公司名称全称</span>
+                            <input type="text" placeholder="请输入公司名称全称">
+                            <p></p>
+                        </div>
+                        <div>
+                            <span>*纳税人识别号或统一社会信用代码</span>
+                            <input type="text" placeholder="请输入纳税人识别号或统一社会信用代码">
+                            <p></p>
+                        </div>
+                        <div>
+                            <span>*电子发票通知手机号</span>
+                            <input type="text" placeholder="请输入电子发票通知手机号">
+                            <p></p>
+                        </div>
+                        <div>
+                            <span>电子发票通知邮箱</span>
+                            <input type="text" placeholder="请输入电子发票通知邮箱">
+                            <p></p>
+                        </div>
+                        <p>友情提示</p>
+                        <ul>
+                            <li>根据国家税务总局公告2017年第16号，如您需要开具企业增值税普通发票，请同时提供：企业名称全称及纳税人识别号或统一社会信用代码，未提供的订单将无法开具发票。</li>
+                            <li>您填写的所有内容都将被系统自动打印到发票上，请勿填写和发票抬头无关的信息；</li>
+                            <li>发票将会商品分开，以邮局信件的方式为您单独寄出；</li>
+                            <li>发票内容默认为"运动服"；</li>
+                            <li>其他内容详见发票制度；</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-account-content-btn">
+                <p>
+                    <i class="icon bill-checkbox im"></i>
+                    <label for="btn">我接受Under Armour</label><a href="#">使用规则</a>和<a href="#">隐私政策</a>
+                </p>
+                <div class="section-account-content-payBtn">
+                    <p>提交订单并支付</p>
+                    <p>提交订单并支付</p>
+                </div>
+                <span></span>
+            </div>
+        </div>
+        <div class="section-order-summary">
+            <div>
+                <div class="section-order-summary-collect">
+                    <h5>订单汇总</h5>
+                    <p>
+                        <span>商品金额</span>
+                        <span>¥909.00</span>
+                    </p>
+                    <p>
+                        <span>运费</span>
+                        <span>免运费</span>
+                    </p>
+                    <p>
+                        <span>优惠金额</span>
+                        <span>-¥0.00</span>
+                    </p>
+                    <p>
+                        <span>合计</span>
+                        <span>¥909.00</span>
+                    </p>
+                    <div class="section-order-summary-collect-discounts">
+                        <span>优惠码</span>
+                        <input type="text">
+                        <i>使用</i>
+                    </div>
+                    <p>
+                        <span>合计</span>
+                        <span>¥909.00</span>
+                    </p>
+                </div>
+                <div class="section-order-summary-details">
+                    <h5>商品详情<span>(共一件商品)</span></h5>
+                    <div class="section-order-summary-details-img">
+                        <img src="./images/1609317779992641_DEFAULT.png" alt="">
+                    </div>
+                    <div class="section-order-summary-details-content">
+                        <p>男士UA HOVR Machina 2 CN跑鞋</p>
+                        <span>3025202</span>
+                        <p>
+                            <span>颜色：学院蓝 (400)</span>
+                            <span>尺码：42.5</span>
+                            <span>数量：1</span>
+                        </p>
+                        <p>¥909.00</p>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li>请您在 6小时 内完成支付，否则订单会被自动取消。</li>
+                <li>如遇陌生电话以“支付宝账号出错”或“资金被冻结”等各种原因要求您提供支付宝等账户密码信息，多数为诈骗信息。</li>
+                <li>Under Armour不会在任何情况下要求您提供支付宝等账户密码信息。请您务必保护好相关个人账户安全，保持警惕，谨防诈骗。</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>Copyright ©2019 Under Armour, Inc.</p>
+            <ul>
+                <li><span>|</span>隐私政策</li>
+                <li><span>|</span>使用规则</li>
+                <li><span>|</span>网站地图</li>
+                <li><span>|</span>沪ICP备12034417号</li>
+                <li><span>|</span><i class="icon footer-i1"></i>电子营业执照</li>
+                <li><span>|</span><i class="icon footer-i2"></i>31010102003916号</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

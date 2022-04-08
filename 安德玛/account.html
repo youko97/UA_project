@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/./accoun.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/account.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- 头部 -->
+        <div class="header-one">
+            <a href="#" class="header-service">在线客服</a>
+            <!-- 滚动屏 -->
+            <div class="header-freight"><span class="header-cartoon">全场满199免运费</span></div>
+            <div class="header-greet"><a href="#">欢迎 登录/注册</a></div>
+        </div>
+        <!-- 头部导航 -->
+        <div class="header-two">
+            <nav class="header-nav">
+                <a href="../home.html"><img src="./images/header-logo.png" alt=""></a>
+                <ul class="header-ul">
+                    <li>
+                        <div>
+                            <p>男子</p>
+                            <p>男子</p>
+                        </div>
+                        <div></div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>女子</p>
+                            <p>女子</p>
+                        </div>
+                        <div></div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>少年</p>
+                            <p>少年</p>
+                        </div>
+                        <div></div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>品牌故事</p>
+                            <p>品牌故事</p>
+                        </div>
+                        <div></div>
+                    </li>
+                </ul>
+                <!-- 头部搜索框 -->
+                <div class="header-hunt">
+                    <label for=""><input type="text" placeholder="搜索"></label>
+                    <span class="icon header-hunt-search"></span>
+                    <i class="header-hunt-search-i"></i>
+                    <span class="icon header-hunt-attention"></span>
+                    <i class="header-hunt-attention-i"></i>
+                    <span class="icon header-hunt-cart"></span>
+                    <i class="header-hunt-cart-num">0</i>
+                </div>
+                <!-- 导航框隐藏框 -->
+                <div class="header-hunt-hidden">
+                    <!-- 男子 -->
+                    <ul>
+                        <li class="header-hunt-hidden-img">
+                            <img src="./images/CN-HP-NAV-PC-0419-1.jpg" alt="">
+                            <h4>男子ISO-CHILL系列</h4>
+                            <span>即可选购</span>
+                        </li>
+                        <li class="header-hunt-hidden-reco">
+                            <dl>
+                                <dt><span>推荐系列</span></dt>
+                                <dd><span class="header-hunt-hidden-reco-red">男子新品推荐</span></dd>
+                                <dd><span>男子ISO-CHILL系列</span></dd>
+                                <dd><span>男子CURRY品牌</span></dd>
+                                <dd><span>男子VELOCITI FLOW系列</span></dd>
+                                <dd><span>男子PROJECT ROCK系列</span></dd>
+                                <dd><span>男子CHARGED跑鞋系列</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>服装</span></dt>
+                                <dd><span>短袖/背心</span></dd>
+                                <dd><span>POLO衫</span></dd>
+                                <dd><span>长袖</span></dd>
+                                <dd><span>连帽上衣</span></dd>
+                                <dd><span>外套</span></dd>
+                                <dd><span>短裤</span></dd>
+                                <dd><span>紧身裤</span></dd>
+                                <dd><span>中裤</span></dd>
+                                <dd><span>长裤</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>鞋类</span></dt>
+                                <dd><span>跑鞋</span></dd>
+                                <dd><span>篮球鞋</span></dd>
+                                <dd><span>训练鞋</span></dd>
+                                <dd><span>运动休闲鞋</span></dd>
+                                <dd><span>拖鞋</span></dd>
+                                <dd><span>其他</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>配件</span></dt>
+                                <dd><span>运动耳机</span></dd>
+                                <dd><span>包</span></dd>
+                                <dd><span>帽</span></dd>
+                                <dd><span>袜</span></dd>
+                                <dd><span>手套</span></dd>
+                                <dd><span>其他</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>运动</span></dt>
+                                <dd><span>训练</span></dd>
+                                <dd><span>跑步</span></dd>
+                                <dd><span>篮球</span></dd>
+                                <dd><span>高尔夫</span></dd>
+                                <dd><span>户外</span></dd>
+                                <dd><span>足球</span></dd>
+                                <dd><span>运动休闲</span></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- 女子 -->
+                        <li class="header-hunt-hidden-img">
+                            <img src="./images/CN-HP-NAV-PC-0419.jpg" alt="">
+                            <h4>女子ISO-CHILL系列</h4>
+                            <span>即可选购</span>
+                        </li>
+                        <li class="header-hunt-hidden-reco">
+                            <dl>
+                                <dt><span>推荐系列</span></dt>
+                                <dd><span class="header-hunt-hidden-reco-red">女子新品推荐</span></dd>
+                                <dd><span>女子ISO-CHILL系列</span></dd>
+                                <dd><span>女子VELOCITI FLOW系列</span></dd>
+                                <dd><span>女子PROJECT ROCK系列</span></dd>
+                                <dd><span>女子CHARGED跑鞋系列</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>服装</span></dt>
+                                <dd><span>短袖/背心</span></dd>
+                                <dd><span>运动内衣</span></dd>
+                                <dd><span>长袖</span></dd>
+                                <dd><span>连帽上衣</span></dd>
+                                <dd><span>外套</span></dd>
+                                <dd><span>短裤</span></dd>
+                                <dd><span>紧身裤</span></dd>
+                                <dd><span>中裤/九分裤</span></dd>
+                                <dd><span>长裤</span></dd>
+                                <dd><span>连衣裙/短裙</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>鞋类</span></dt>
+                                <dd><span>跑鞋</span></dd>
+                                <dd><span>训练鞋</span></dd>
+                                <dd><span>运动休闲鞋</span></dd>
+                                <dd><span>拖鞋</span></dd>
+                                <dd><span>其他</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>配件</span></dt>
+                                <dd><span>运动耳机</span></dd>
+                                <dd><span>包</span></dd>
+                                <dd><span>帽</span></dd>
+                                <dd><span>袜</span></dd>
+                                <dd><span>头带</span></dd>
+                                <dd><span>手套</span></dd>
+                                <dd><span>其他</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>运动</span></dt>
+                                <dd><span>训练</span></dd>
+                                <dd><span>健身/瑜伽</span></dd>
+                                <dd><span>跑步</span></dd>
+                                <dd><span>户外</span></dd>
+                                <dd><span>高尔夫</span></dd>
+                                <dd><span>运动休闲</span></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul>
+                        <!-- 儿童 -->
+                        <li class="header-hunt-hidden-img">
+                            <img src="./images/CN-NAV1-PC-HP-20210618.jpg" alt="">
+                            <h4>男童上装</h4>
+                            <span>即可选购</span>
+                        </li>
+                        <li class="header-hunt-hidden-reco">
+                            <dl>
+                                <dt><span>推荐系列</span></dt>
+                                <dd><span class="header-hunt-hidden-reco-red">少年新品推荐</span></dd>
+                                <dd><span>少年ISO-CHILL系列</span></dd>
+                                <dd><span>少年VELOCITI FLOW系列</span></dd>
+                                <dd><span>少年PROJECT ROCK系列</span></dd>
+                                <dd><span>少年CHARGED跑鞋系列</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>男童装备</span></dt>
+                                <dd><span>上装</span></dd>
+                                <dd><span>下装</span></dd>
+                                <dd><span>鞋类</span></dd>
+                                <dd><span>配件</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>女童装备</span></dt>
+                                <dd><span>上装</span></dd>
+                                <dd><span>下装</span></dd>
+                                <dd><span>鞋类</span></dd>
+                                <dd><span>配件</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt><span>运动</span></dt>
+                                <dd><span>跑步</span></dd>
+                                <dd><span>训练</span></dd>
+                                <dd><span>篮球</span></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <ul class="header-hunt-hidden-brand">
+                        <!-- 品牌 -->
+                        <li>
+                            <img src="./images/brandstory-1.jpg" alt="">
+                            <h4>关于品牌</h4>
+                        </li>
+                        <li>
+                            <img src="./images/brandstory-2.jpg" alt="">
+                            <h4>运动明星</h4>
+                        </li>
+                        <li>
+                            <img src="./images/brandstory-3.jpg" alt="">
+                            <h4>媒体中心</h4>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- 购物袋 -->
+        <div class="header-hunt-cart-box">
+            <i class="icon header-hunt-cart-box-btn"></i>
+            <h4 class="header-hunt-cart-box-title">购物袋 (1)</h4>
+            <div class="header-hunt-cart-box-content">
+                <div class="header-hunt-cart-box-content-page">
+                    <a href="#"> <img src="./images/1609317779992641_DEFAULT.png" alt="" width="100"></a>
+                    <p>男士UA HOVR Machina 2 CN跑鞋</p>
+                    <p><span>颜色:</span><span>学院蓝(400)</span></p>
+                    <p><span>尺码:</span><span>40.5</span></p>
+                    <p><span>数量:</span><span>1</span></p>
+                    <p class="header-hunt-cart-box-content-del"><span>删除</span><span>¥909</span></p>
+                </div>
+                <p class="header-hunt-cart-box-content-total"><span>合计</span><span>¥909</span></p>
+                <div class="header-hunt-cart-box-content-btn">
+                    <p>查看购物袋</p>
+                    <p>查看购物袋</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 主体部分 -->
+    <section>
+        <!-- 大图 -->
+        <div class="section-max-img">
+            <span class="section-max-img-new">新品</span>
+            <p class="section-max-img-pvw"><i class="icon"></i>预览图片<span>(5)</span>
+                <p>
+                    <img src="./images/16201081294785594_DEFAULT.png" alt="" width="80%px">
+        </div>
+        <!-- 大图详情 -->
+        <div class="section-max-page">
+            <div class="section-max-page-title">
+                <p>男士UA HOVR Machina 2 CN跑鞋</p>
+                <p><span>￥909</span><span>￥1299</span></p>
+                <i class="icon"></i>
+            </div>
+            <ul class="section-max-page-content">
+                <li class="section-max-page-content-color">
+                    <span>颜色:</span>
+                    <span>毒液红(600)</span>
+                    <span>STYLE#3025202</span>
+                </li>
+                <li class="section-max-page-content-img">
+                    <ul>
+                        <!-- 小图 -->
+                        <li class="img-border"><img src="./images/16201081294785594_DEFAULT.png" alt=""></li>
+                        <li><img src="./images/16093177806562867_DEFAULT.png" alt=""></li>
+                        <li><img src="./images/1609317779992641_DEFAULT.png" alt=""></li>
+                        <li><img src="./images/16201081309211655_DEFAULT.png" alt=""></li>
+                        <li><img src="./images/16201081300907569_DEFAULT.png" alt=""></li>
+                    </ul>
+                </li>
+                <li class="section-max-page-content-table">
+                    <!-- 尺码 -->
+                    <span>尺码: </span><span class="section-max-page-content-table-num"></span>
+                    <p>
+                        <img src="./images/size-icon@2x.png" alt="">
+                        <a href="#">查看尺码表</a>
+                </li>
+                <li class="section-max-page-content-size">
+                    <ul>
+                        <li>40</li>
+                        <li>40.5</li>
+                        <li>41</li>
+                        <li>42</li>
+                        <li>42.5</li>
+                        <li>43</li>
+                        <li>44</li>
+                        <li>44.5</li>
+                        <li>45</li>
+                        <li>45.5</li>
+                        <li>46</li>
+                    </ul>
+                </li>
+                <li class="section-max-page-content-num">
+                    <p><span>数量: </span><span class="section-max-page-content-amount">1</span>件</p>
+                </li>
+                <li class="section-max-page-content-nums">
+                    <span class="section-max-page-content-minus num-background">-</span>
+                    <span class="section-max-page-content-amount">1</span>
+                    <span class="section-max-page-content-plus num-pointer">+</span>
+                </li>
+                <li class="section-max-page-content-total">
+                    <div>
+                        <p>加入购物袋</p>
+                        <p>加入购物袋</p>
+                    </div>
+                    <div>
+                        <a href="order.html" style="color:#fff">
+                            <p>立即购买</p>
+                            <p>立即购买</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="section-max-page-content-service">
+                    <i class="icon"></i><a href="#">在线客服</a>
+                    <p>7天无条件退换货（除内裤、口罩）; 全场满199免运费</p>
+                </li>
+                <li class="section-max-page-content-fit">
+                    <h6>适合跑步等运动</h6>
+                </li>
+            </ul>
+        </div>
+        <div class="section-products-introduction">
+            <!-- 商品介绍 -->
+            <p>商品介绍</p>
+            <div class="section-product-detail">
+                <span>商品细节</span>
+                <ul>
+                    <li>轻盈网眼鞋面，透气舒适</li>
+                    <li>柔软中底，回弹缓震效果出众，脚感更加出众</li>
+                    <li>可拆卸鞋垫，贴合脚底，提供更强的足部支撑</li>
+                    <li>橡胶和EVA材质格纹鞋底，兼具抓地力与耐穿性</li>
+                    <li>根据46码检测重量约为336g，不同尺码会有相应差异</li>
+                </ul>
+            </div>
+            <div class="section-product-img">
+                <!-- 详情图 -->
+                <ul>
+                    <li><img src="./images/shoe01.png" alt=""></li>
+                    <li><img src="./images/shoe02.png" alt=""></li>
+                    <li><img src="./images/shoe03.png" alt=""></li>
+                    <li><img src="./images/shoe04.png" alt=""></li>
+                    <li><img src="./images/shoe05.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-size-specification">
+            <!-- 尺码表 -->
+            <p>尺码表</p>
+            <div>
+                <img src="./images/size-men-shoe-new_NULL.jpg" alt="">
+                <p class="section-size-specification-table-th">
+                    <span>美码</span>
+                    <span>欧码</span>
+                    <span>CM尺码</span>
+                </p>
+                <div class="section-size-specification-table">
+                    <p>
+                        <span>7</span>
+                        <span>7.5</span>
+                        <span>8</span>
+                        <span>8.5</span>
+                        <span>9</span>
+                        <span>9.5</span>
+                        <span>10</span>
+                        <span>10.5</span>
+                        <span>11</span>
+                        <span>11.5</span>
+                        <span>12</span>
+                        <span>12.5</span>
+                        <span>13</span>
+                        <span>13.5</span>
+                        <span>14</span>
+                    </p>
+                    <p>
+
+                        <span>40</span>
+                        <span>40.5</span>
+                        <span>41</span>
+                        <span>42</span>
+                        <span>42.5</span>
+                        <span>43</span>
+                        <span>44</span>
+                        <span>44.5</span>
+                        <span>45</span>
+                        <span>45.5</span>
+                        <span>46</span>
+                        <span>47</span>
+                        <span>47.5</span>
+                        <span>48</span>
+                        <span>48.5</span>
+                    </p>
+                    <p>
+
+                        <span>25</span>
+                        <span>25.5</span>
+                        <span>26</span>
+                        <span>26.5</span>
+                        <span>27</span>
+                        <span>27.5</span>
+                        <span>28</span>
+                        <span>28.5</span>
+                        <span>29</span>
+                        <span>29.5</span>
+                        <span>30</span>
+                        <span>30.5</span>
+                        <span>31</span>
+                        <span>31.5</span>
+                        <span>32</span>
+                    </p>
+                </div>
+                <div class="section-size-measure">
+                    <p>测量方法</p>
+                    <p>根据脚趾到脚后跟的厘米数，对照尺码表选购最适合你的鞋码。若测量数值在两个鞋码之间，建议购买较大的码数。针对脚偏宽或者脚背偏高者，建议购买大半码。</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="./images/16109422921249020.jpg" alt="">
+        </div>
+        <div class="section-price-escription">
+            <!-- 价格说明 -->
+            <p>价格说明</p>
+            <p>划线的价格可能是商品的专柜吊牌价或正品零售价指导价或该商品的曾经展示过的销售价等，仅供您参考; 未划线的价格是商品在官网上的销售标价，具体的成交价格可能因会员使用优惠券发生变化，最终以订单结算页价格为准</p>
+        </div>
+        <div class="section-Popular-goods">
+            <span class="section-Popular-goods-left"><</span>
+            <span class="section-Popular-goods-right">></span>
+            <h1>人气商品</h1>
+            <ul>
+                <li>
+                    <div>
+                        <img src="./images/16158830668215784_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16158830675847751_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind PRZ CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16167463985336924_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 CN跑鞋</p>
+                    <span>￥1099</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16189738110146663_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 25th CN跑鞋</p>
+                    <span>￥769</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16158830668215784_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16158830675847751_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind PRZ CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16167463985336924_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 CN跑鞋</p>
+                    <span>￥1099</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16189738110146663_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 25th CN跑鞋</p>
+                    <span>￥769</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16158830668215784_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16158830675847751_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA FLOW Velociti Wind PRZ CN跑鞋</p>
+                    <span>￥909</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16167463985336924_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 CN跑鞋</p>
+                    <span>￥1099</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="./images/16189738110146663_DEFAULT.png" alt="">
+                    </div>
+                    <p>男士UA HOVR Infinite 3 25th CN跑鞋</p>
+                    <span>￥769</span>
+                </li>
+            </ul>
+            <p>安德玛男士跑步系列最新推出男士UA HOVR Machina 2 CN跑鞋，了解更多男士UA HOVR Machina 2 CN跑鞋价格、图片等官方信息，购买男士UA HOVR Machina 2 CN跑鞋，就到Under Armour（安德玛）中国官网。</p>
+        </div>
+        <div class="section-unfound">
+            <!-- 主体搜索框 -->
+            <p>没有找到你想要的？</p>
+            <label for=""><input type="text"><i class="icon"></i></label>
+            <p>
+                <span>试试搜索 </span>
+                <a href="#">直降专区,</a>
+                <a href="#">CURRY8 篮球鞋,</a>
+                <a href="#">ISO-CHILL系列,</a>
+                <a href="#">PROJECT ROCK系列,</a>
+                <a href="#">VELOCITI FLOW系列</a>
+            </p>
+        </div>
+        <!-- 回到顶部 -->
+        <div class="icon" id="toTop">
+        </div>
+        <!-- 顶部隐藏框 -->
+        <div class="topHide">
+            <div id="topHide">
+                <div class="topHide-text">
+                    <p>男士UA HOVR Machina 2 CN跑鞋</p>
+                    <p><span>￥909</span></p>
+                </div>
+                <div class="section-max-page-content-total">
+                    <div>
+                        <p>加入购物袋</p>
+                        <p>加入购物袋</p>
+                    </div>
+                    <div>
+                        <p>立即购买</p>
+                        <p>立即购买</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <iframe src="./footer.html" frameborder="0" id="footer"></iframe>
+</body>
+
+</html>
